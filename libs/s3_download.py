@@ -5,9 +5,10 @@ import os
 import boto3
 import botocore
 import shutil
+from .guard_constants import DOWNLOAD_DIR
 
 forestai = 'forestai-guard'
-download_directory = "/home/shared/av_data/download/"
+download_directory = DOWNLOAD_DIR
 # We want this to be relative path for deletion process
 download_master_directory = 'master/'
 

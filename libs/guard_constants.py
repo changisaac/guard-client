@@ -9,3 +9,6 @@ S3_BUCKET_NAME = "forestai-guard"
 S3_IMAGES_LOCATION = "images"
 IMG_FILE_TYPE = "png"
 IMG_META_DATA_FILE_NAME = "meta_data.json"
+
+# USER CONSTANTS ONLY CHANGE VALUES UNDER HERE
+DOWNLOAD_DIR = "/home/development/av_data/download/"
