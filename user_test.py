@@ -39,6 +39,10 @@ def main():
         "truck": {"$gt": 0},
         }
     
+    ex_query_5 = {
+        "speed_m_s": {"$gt": 5},
+        }
+    
     # Query by tags simply by passing in the query from above
     result = guard.query_by_tags(ex_query_4)
 
