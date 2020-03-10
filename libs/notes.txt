@@ -9,3 +9,14 @@ ex: detection ran frames = 0.png, 100.png then the detections
 
 ex: detection ran frames = 0.png , 100.png, 200.png then the detections
     for 100.png in the db will reference the frames from 0 to 200
+
+To load new bag files:
+
+- make sure gpx file is gps directory
+- drop `guard-db-test`
+- delete everything in directory images are written to (ex: `test`)
+- `python frame_processor.py`
+
+To make work:
+
+- need frames in s3 in correct locations (loaded from guard-onboard)

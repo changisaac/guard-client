@@ -168,7 +168,7 @@ class GuardClient:
             print("")
 
         # run s3 download
-        #s3_download.download_process(all_s3_locations)
+        s3_download.download_process(all_s3_locations)
 
     def write_to_json(self, query, query_res):
         res = OrderedDict()

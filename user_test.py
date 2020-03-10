@@ -35,13 +35,17 @@ def main():
         "traffic light": {"$gt": 0}
         }
 
+    ex_query_4 = {
+        "truck": {"$gt": 0},
+        }
+    
     # Query by tags simply by passing in the query from above
-    result = guard.query_by_tags(ex_query_3)
+    result = guard.query_by_tags(ex_query_4)
 
     # Write to json easily for saving results or for visual inspection
     # Results are automatically written to the specified log location
     # Remember to include your query so GuardClient can specify it in the output
-    guard.write_to_json(ex_query_3, result)
+    guard.write_to_json(ex_query_4, result)
 
     # After deciding which scenarios you want based on you needs
     # download your scenarios directly from guard's cloud object storage

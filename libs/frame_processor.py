@@ -87,25 +87,21 @@ def process_bags(img_bag_file, img_out_dir, img_topic, gps_json, collector_id):
     # load images in rosbag file to file system using external python2 script
     # load image meta data to json in img_out_dir
     # assume script for writing ros bags to png files is in same directory
-    """
     load_imgs_cmd = "./rosimg_to_img.py -b " + img_bag_file +" -d " + img_out_dir + " -t " + img_topic
     
     process = subprocess.run(load_imgs_cmd.split())
     process.check_returncode()
-    """
 
     # run object detection on images and output detections to json
     object_detections_dir = img_out_dir + "/object_detections"
     object_detections_json = img_out_dir+"/object_detections.json"
     
-    """
     process_images(
         img_dir=img_out_dir,
         img_type=IMG_FILE_TYPE,
         out_json=object_detections_json,
         out_dir=object_detections_dir,
-        drop_rate=100) 
-    """
+        drop_rate=10) 
 
     # load in gps lookup table, key is unix timstamp (seconds)
     gps_lookup = None
@@ -203,10 +199,10 @@ def process_bags(img_bag_file, img_out_dir, img_topic, gps_json, collector_id):
 
 def main():
     process_bags(
-        img_bag_file="/home/shared/av_data/bags/daylight_exposure_3000.bag",
-        img_out_dir="/home/shared/av_data/test", 
+        img_bag_file="/home/development/av_data/bags/daylight_exposure_3000.bag",
+        img_out_dir="/home/development/av_data/test", 
         img_topic="/camera/infra1/image_rect_raw",
-        gps_json="/home/shared/av_data/gps/20200306-175204.json",
+        gps_json="/home/development/av_data/gps/20200306-175204.json",
         collector_id="testuser")
 
 if __name__ == "__main__":
