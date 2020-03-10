@@ -163,9 +163,9 @@ class GuardClient:
 
         cl.close()
     
-        for x in all_s3_locations:
-            print(x)
-            print("")
+        #for x in all_s3_locations:
+        #    print(x)
+        #    print("")
 
         # run s3 download
         s3_download.download_process(all_s3_locations)

@@ -47,7 +47,7 @@ def main():
     # Remember to include your query so GuardClient can specify it in the output
     guard.write_to_json(ex_query_4, result)
 
-    # After deciding which scenarios you want based on you needs
+    # After deciding which scenarios your want based on you needs
     # download your scenarios directly from guard's cloud object storage
     guard.download_query(result)
 
