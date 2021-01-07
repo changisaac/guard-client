@@ -1,0 +1,2 @@
+# guard-client
+A framework which provides API function calls to extract specific road scenarios from a video stored in a ROS bag. Multiple adjacent frames in the video with the same objects are grouped together to create a scenario. For example one can query for all scenarios that have both trucks and traffic lights and will get back a JSON output of all the sections of the video which follow that criteria.
