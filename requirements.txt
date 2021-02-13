@@ -14,7 +14,7 @@ catkin-pkg==0.4.16
 celery==4.4.0
 cffi==1.14.0
 constantly==15.1.0
-cryptography==2.8
+cryptography==3.2
 cv-bridge==1.13.0
 dataclasses==0.7
 disjoint-set==0.6.1
