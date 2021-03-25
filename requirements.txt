@@ -57,7 +57,7 @@ pyparsing==2.4.6
 pyrosbag==0.1.3
 python-dateutil==2.8.1
 pytz==2019.3
-PyYAML==5.3
+PyYAML==5.4
 redis==3.4.1
 rosbag==1.14.3
 rosboost-cfg==1.14.7
