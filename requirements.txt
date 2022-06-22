@@ -41,7 +41,7 @@ kombu==4.6.7
 lxml==4.5.0
 message-filters==1.14.3
 mysqlclient==1.4.6
-numpy==1.18.1
+numpy==1.22.0
 odict==1.7.0
 opencv-python==4.2.0.32
 optional-django==0.1.0
