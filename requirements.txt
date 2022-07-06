@@ -38,7 +38,7 @@ importlib-metadata==1.5.0
 incremental==17.5.0
 jmespath==0.9.5
 kombu==4.6.7
-lxml==4.5.0
+lxml==4.9.1
 message-filters==1.14.3
 mysqlclient==1.4.6
 numpy==1.18.1
